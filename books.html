@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Bootstrap 4 Website Layout</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.5.15.min.css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed site-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/final_white_png.png"></a>
+            <button type="button" class="btn btn-outline-primary btn-login" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Login</button>
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark  fixed site-header-srow">
+        <div class="input-group md-form form-sm form-2 pl-0 search">
+            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fa fa-search text-grey"
+                        aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark  fixed site-header-srow">
+        <div class="container-fluid">
+            <!-- <button type="button" class="btn btn-outline-primary btn-category" style="padding-left: 40px;padding-right:40px">Categories</button> -->
+            <a href="categories.html" class="btn btn-outline-primary btn-category" style="padding-left: 40px;padding-right:40px">Categories</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" style="border-color: #fff;border-width: 2px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" style="align-self:center">
+                        <a class="nav-link" style="padding-top:5px;color:#fff;font-weight:500;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item" style="align-self:center">
+                        <a class="nav-link" style="padding-top:5px;font-weight:500;" href="#">Get Started</a>
+                    </li>
+                    <li class="nav-item" style="align-self:center">
+                        <a class="nav-link" style="padding-top:5px;font-weight:500;" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <a href="books.html">
+                    <div class="bookdetail">
+                        <img style="height:100%" src="img/books/2044238.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="col-6" style="padding-left: 20px;">
+                <div style="padding-top:30px;">
+                    <p class="lead" style="font-size: 1.8em;color:#0095ff">
+                        Bathtime for buscuit
+                    </p>
+                </div>
+                <div style="padding-top:100px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary download">Download</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-warning share" style="width:auto;float:right">Share</button>
+            </div>
+        </div>
+        <hr class="seperator">
+    </div>
+
+    <div class="container-fluid">
+        <p class="lead" style="font-size: 1.8em;color:#4d4d4d"> Brief</p>
+        <p style="text-align: justify;font-size: 1em;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+        </p>
+        <hr class="seperator">
+    </div>
+
+    <div class="container-fluid">
+        <p class="lead" style="font-size: 1.8em;color:#4d4d4d"> Details</p>
+        <p style="text-align: justify;font-size: 1em;">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">ISBN</th>
+                        <td>123456789</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Publisher</th>
+                        <td>Jacob</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Author</th>
+                        <td>Larry</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Language</th>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Category</th>
+                        <td>Kids Story</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <hr class="seperator">
+    </div>
+
+    <div class="container-fluid">
+        <p class="lead">Rate this book</p>
+        <div>
+                <span class="btnrating fa fa-star rate" data-attr="1" id="rating-star-1"></span>
+                <span class="btnrating fa fa-star rate" data-attr="2" id="rating-star-2"></span>
+                <span class="btnrating fa fa-star rate" data-attr="3" id="rating-star-3"></span>
+                <span class="btnrating fa fa-star rate" data-attr="4" id="rating-star-4"></span>
+                <span class="btnrating fa fa-star rate" data-attr="5" id="rating-star-5"></span>
+            </div>
+        <hr class="seperator">
+    </div>
+
+
+    <!--- Connect -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/TouchVisionTech/" target="_blank"><span slyle="height:50px;width:50px"><i
+                            class="fab fa-facebook-f"></i></span></a>
+                <a href="https://www.linkedin.com/company/touchvisiontech/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC1Cs3KYpBLQxJMSJNNMImXQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/touchvisiontech/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12 padding">
+                    <a href=# style="padding:0 10px;" class="lead">About</a>
+                    <a href=# style="padding:0 10px;" class="lead">Privacy</a>
+                    <a href=# style="padding:0 10px;" class="lead">Sitemap</a>
+                </div>
+            </div>
+            <div class="row text-center padding">
+                <div class="col-12">
+                    © Copyright <span style="color:#0095ff">t<span style="color:#faba2a">o</span>uchvision</span> 2018.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button class="loginbtn" type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+
+<!-- filter -->
+<div id="id02" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+
+        <div class="container">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Category 1
+                </label>
+            </div>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Category 2
+                </label>
+            </div>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                    Category 3
+                </label>
+            </div>
+            <hr>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="okbtn">OK</button>
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+        </div>
+    </form>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        $(document).ready(function () {
+
+            $('#eall').on('click', function () {
+                // $('#accordionExample .panel-collapse').collapse('toggle');
+                $('#eall').hide();
+                $('#call').show();
+                $(".card div:nth-child(2)").addClass("show");
+            });
+
+            $('#call').on('click', function () {
+                // $('#accordionExample .panel-collapse').collapse('toggle');
+                $('#call').hide();
+                $("#eall").show();
+                $(".card div:nth-child(2)").removeClass("show");
+            });
+        });
+        jQuery(document).ready(function($){
+	    
+        $(".btnrating").on('click',(function(e) {
+        
+        var selected_value = $(this).attr("data-attr");
+                
+        for (i = 1; i <= selected_value; ++i) {
+        $("#rating-star-"+i).addClass('rated');
+        $("#rating-star-"+i).removeClass('rate');
+        }
+        for (j = selected_value+1; j <= 5; ++j) {
+        $("#rating-star-"+j).addClass('rate');
+        $("#rating-star-"+j).removeClass('rated');
+        }
+        
+        }));
+        
+            
+    });
+    </script>
+
+</div>
