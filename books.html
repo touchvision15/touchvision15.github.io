@@ -27,6 +27,29 @@
 
         </div>
     </nav>
+	<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" aria-label="textbox enter username" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" aria-label="textbox enter password" required>
+
+			<button class="loginbtn" type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> <span aria-label="remember me">Remember me</span>
+			</label>
+		</div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
     <nav class="navbar navbar-expand-md navbar-dark  fixed site-header-srow">
         <div class="input-group md-form form-sm form-2 pl-0 search">
             <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
@@ -185,29 +208,7 @@
 </body>
 
 </html>
-<div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php">
-
-		<div class="container">
-			<label for="uname"><b>Username</b></label>
-			<input type="text" placeholder="Enter Username" name="uname" aria-label="textbox enter username" required>
-
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" aria-label="textbox enter password" required>
-
-			<button class="loginbtn" type="submit">Login</button>
-			<label>
-				<input type="checkbox" checked="checked" name="remember"> <span aria-label="remember me">Remember me</span>
-			</label>
-		</div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
-</div>
 <script>
     // Get the modal
     var modal = document.getElementById('id01');
