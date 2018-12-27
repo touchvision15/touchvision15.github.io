@@ -598,11 +598,11 @@ span.psw {
   border-radius: 50px;
   background-color: #0095ff;
 }
-.share{
+.share-btn{
   border-radius:50px;
   color:#faba2a;
 }
-.share:hover{
+.share-btn:hover{
   color:#fff;
 }
 .bookdetail{
